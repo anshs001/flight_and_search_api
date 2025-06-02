@@ -8,7 +8,7 @@ class CrudService {
             const response = await this.repository.create(data);
             return response;
         } catch (error) {
-            console.log("Something went wrong in crud service");
+            console.log("something went wrong in crud service");
             throw error;
         }
     }
@@ -18,7 +18,7 @@ class CrudService {
             const response = await this.repository.destroy(id);
             return response;
         } catch (error) {
-            console.log("Something went wrong in crud service");
+            console.log("something went wrong in crud service");
             throw error;
         }
     }
@@ -28,7 +28,7 @@ class CrudService {
             const response = await this.repository.get(id);
             return response;
         } catch (error) {
-            console.log("Something went wrong in crud service");
+            console.log("something went wrong in crud service");
             throw error;
         }
     }
@@ -38,7 +38,7 @@ class CrudService {
             const response = await this.repository.getAll();
             return response;
         } catch (error) {
-            console.log("Something went wrong in crud service");
+            console.log("something went wrong in crud service");
             throw error;
         }
     }
@@ -48,7 +48,7 @@ class CrudService {
             const response = await this.repository.update(id, data);
             return response;
         } catch (error) {
-            console.log("Something went wrong in crud service");
+            console.log("something went wrong in crud service");
             throw error;
         }
     }

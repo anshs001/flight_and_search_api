@@ -1,4 +1,4 @@
-class CrudRepository {
+class CrudRespository {
     constructor(model) {
         this.model = model;
     }
@@ -11,12 +11,11 @@ class CrudRepository {
             console.log("Something went wrong in crud repo");
             throw error;
         }
-
     }
 
     async destroy(modelId) {
         try {
-            const result = await this.model.destroy({
+            await this.model.destroy({
                 where: {
                     id: modelId
                 }
@@ -26,7 +25,6 @@ class CrudRepository {
             console.log("Something went wrong in crud repo");
             throw error;
         }
-
     }
 
     async get(modelId) {
@@ -37,7 +35,6 @@ class CrudRepository {
             console.log("Something went wrong in crud repo");
             throw error;
         }
-
     }
 
     async getAll() {
@@ -48,7 +45,6 @@ class CrudRepository {
             console.log("Something went wrong in crud repo");
             throw error;
         }
-
     }
 
     async update(modelId, data) {
@@ -57,14 +53,14 @@ class CrudRepository {
                 where: {
                     id: modelId
                 },
+                 
             });
             return result;
         } catch (error) {
             console.log("Something went wrong in crud repo");
             throw error;
         }
-
     }
 }
 
-module.exports = CrudRepository;
+module.exports = CrudRespository;

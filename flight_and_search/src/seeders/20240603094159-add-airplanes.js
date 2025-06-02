@@ -42,9 +42,7 @@ module.exports = {
         capacity: 150,
         createdAt: new Date(),
         updatedAt: new Date()
-        
       },
-
     ], {});
   },
 
